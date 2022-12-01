@@ -34,13 +34,13 @@ def download(max_iterations):
     iteration = 1
     while iteration <= int(max_iterations):
 
-        print "Searching for emails..."
+        print ("Searching for emails...")
 
         ## We reached a dead end if there are no
         ## more sites in our to_search_list
 
         if len(to_search_list) == 0:
-            print "Dead URL end"
+            print ("Dead URL end")
             break
 
         ## Get the first URL from the list of the URLs
@@ -119,9 +119,9 @@ def output_results():
     ## of sites we actually crawled, and the total number of
     ## emails collected.
 
-    print "Number of sites to search: %s" % len(to_search_list)
-    print "Number of sites searched: %s" % len(searched_list)
-    print "Number of emails collected: %s" % len(email_list)
+    print ("Number of sites to search: %s") % len(to_search_list)
+    print ("Number of sites searched: %s") % len(searched_list)
+    print ("Number of emails collected: %s") % len(email_list)
 
 def write_results():
 
