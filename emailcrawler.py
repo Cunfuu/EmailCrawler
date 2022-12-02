@@ -119,9 +119,9 @@ def output_results():
     ## of sites we actually crawled, and the total number of
     ## emails collected.
 
-    print ("Number of sites to search: %s") % len(to_search_list)
-    print ("Number of sites searched: %s") % len(searched_list)
-    print ("Number of emails collected: %s") % len(email_list)
+    print ("Number of sites to search: %s" % (len(to_search_list))) 
+    print ("Number of sites searched: %s" % (len(searched_list)))
+    print ("Number of emails collected: %s" % (len(email_list)))
 
 def write_results():
 
@@ -131,9 +131,9 @@ def write_results():
 
     info_file_name = "info.txt"
     i = open("info.txt", "w")     ## create the file
-    i.write("Number of sites to search: %s \n" % len(to_search_list))
-    i.write("Number of sites searched: %s \n" % len(searched_list))
-    i.write("Number of emails collected: %s \n" % len(email_list))
+    i.write("Number of sites to search: %s \n" % (len(to_search_list)))
+    i.write("Number of sites searched: %s \n" % (len(searched_list)))
+    i.write("Number of emails collected: %s \n" % (len(email_list)))
     i.close()
 
     ## Write down all the emails collected into a file called
